@@ -1,0 +1,17 @@
+{
+    "name": "smf/smf-rector",
+    "type": "rector-extension",
+    "require": {
+        "php": "^8.1",
+        "rector/rector": "^0.18.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "smf\\Rector\\": "src"
+        }
+    },
+    "scripts": {
+        "lint-rector": "@php vendor/bin/rector process --dry-run --clear-cache",
+        "rector": "@php vendor/bin/rector process"
+    }
+}
